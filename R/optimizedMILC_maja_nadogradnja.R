@@ -323,6 +323,7 @@ doall_csm <- function(csm,levels_KEGG=c()){
     contable_kocc <- contable_koc
     kos <- unique(csm$ID)
   }
+  contable_kocc$median <- 0
     if (!KEGG)
     {
       contable_kocc$desc <- name
